@@ -191,8 +191,6 @@ function saveFunc(resolution) {
 		docFolder.create();
 	}
 
-	//alert(docFolder);
-
 	var saveFile = File(docFolder + "/" + tempDocName + ".png");
 
 	var sfwOptions = new ExportOptionsSaveForWeb(); 
