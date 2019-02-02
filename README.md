@@ -1,6 +1,14 @@
 # us-android-export-edited
 Build AndoirdUI PSD is export assets.
 
+# Update In Scripts.
+
+We was changed a script and export all the layer as seprate assets. this is work same like a 'us-android-export'.
+
+We have upload two file one is exprot all layer and second is only selected layer export file name is following:
+  1. all-us-android-export-krBuani.jsx
+  2. all-us-android-export-krBuani - selected.jsx
+
 
 # Android Assets for Photoshop
 
