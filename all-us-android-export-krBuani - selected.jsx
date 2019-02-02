@@ -51,20 +51,13 @@ function collectAllLayers (parent, allLayers)
     var group = parent.activeLayer;
     alert(parent.activeLayer.layers[i].visible);
     
-    //alert (""+layers.lenght);
-    //alert(parent.activeLayer.itemIndex );
+    
     for (var m = 0; m < parent.layers.length; m++)
     {
         var currentLayer = parent.layers[m];
-        // alert(currentLayer.visible); this is  display only visible layer
+        
         alert(currentLayer.selected);
-        /*if(parent.layers[m] == group) {
-            alert(parent.layers[m].name);
-        }
-        if(currentLayer.selected == true) {
-            alert(currentLayer.name);
-        }*/
-    
+       
         if (currentLayer.typename === "ArtLayer")
         {
             if(currentLayer.visible)
@@ -112,8 +105,6 @@ function init() {
     app.preferences.rulerUnits = ru;
 }
 
-// Test if the document is new (unsaved)
-// http://2.adobe-photoshop-scripting.overzone.net/determine-if-file-has-never-been-saved-in-javascript-t264.html
 
 function isDocumentNew(doc){
 	// assumes doc is the activeDocument
@@ -205,7 +196,6 @@ function saveFunc(resolution) {
 		docFolder.create();
 	}
 
-	//alert(docFolder);
 
 	var saveFile = File(docFolder + "/" + tempDocName + ".png");
 
